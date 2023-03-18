@@ -1,0 +1,424 @@
+/* Fonts */
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Regular.woff") format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Medium.woff") format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Bold.woff") format('woff');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    color: #090909;
+    font-weight: 500;
+
+    background-color: #fff
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    max-width: 1445px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 975px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+
+.header {
+    margin-bottom: 70px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 32px 0;
+    border-bottom: 1px solid #828282;
+}
+
+.nav__link {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    color: #828282;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Intro */
+
+.intro {
+    margin-bottom: 100px;
+}
+.intro__inner {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_name {
+    display: flex;
+    flex-direction: column;
+    font-size: 47px;
+    font-weight: 700;
+    color: #000;
+}
+
+.my_prof {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.lang {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.lang span {
+    color: #828282;
+}
+
+.lang .active {
+    color: #000;
+}
+
+.intro_image img {
+    width: 100%;
+    max-width: 945px;
+}
+
+/* About me */
+
+.about_me {
+    background-color: #F6F6F6;
+}
+
+.about_me__inner {
+    width: 100%;
+    max-width: 485px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about_me__title {
+    margin-bottom: 25px;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 34px;
+    color: #000;
+    font-weight: 700;
+}
+
+.about_me_text {
+    font-family: 'Griloy', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+.about_me_text p {
+    margin-bottom: 50px;
+}
+
+.about_me_text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Skills */
+.skills {
+    padding: 100px 0;
+}
+.skills__inner {
+    width: 100%;
+    max-width: 485px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills__title {
+    margin-bottom: 50px;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 34px;
+    color: #000;
+    font-weight: 700;
+}
+
+.skills__description {
+    margin-bottom: 80px;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+.skills__programs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programs_item {
+    width: 175px;
+
+    text-align: center;
+}
+
+.program_icon {
+    margin-bottom: 25px;
+
+    display: inline-block;
+    width: 100%;
+    max-width: 80px;
+}
+
+.program_icon--figma {
+    max-width: 60px;
+}
+
+.program_title {
+    margin-bottom: 40px;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 14px;
+    color: #828282;
+    font-weight: 700;
+}
+
+.program_level {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 100px 0;
+    background-color: #F6F6F6;
+}
+
+.portfolio__inner {
+    font-family: 'Griloy', sans-serif;
+    text-align: center;
+}
+
+.portfolio_image img {
+    width: 100%;
+    max-width: 945px;
+}
+
+.portfolio__title {
+    margin-bottom: 50px;
+
+    font-size: 34px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+.portfolio_image img {
+    margin-bottom: 45px;
+}
+
+.portfolio__link {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+
+    transition: color .2s linear;
+}
+
+.portfolio__link:hover {
+    color: black;
+}
+
+
+/* Reebok */
+
+.reebok {
+    padding: 0 0 100px;
+    background-color: #F6F6F6;
+}
+
+.reebok__inner {
+    font-family: 'Griloy', sans-serif;
+    text-align: center;
+}
+
+.reebok_image img {
+    width: 100%;
+    max-width: 945px;
+    margin-bottom: 45px;
+}
+
+.reebok-store__link {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+
+    transition: color .2s linear;
+}
+
+.reebok-store__link:hover {
+    color: black;
+}
+
+/* Braun */
+
+.braun {
+    padding: 0 0 100px;
+    background-color: #F6F6F6;
+}
+
+.braun__inner {
+    font-family: 'Griloy', sans-serif;
+    text-align: center;
+}
+
+.braun_image img {
+    width: 100%;
+    max-width: 945px;
+    margin-bottom: 45px;
+}
+
+.braun-store__link {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+
+    transition: color .2s linear;
+}
+
+.braun-store__link:hover {
+    color: black;
+}
+
+/* Footer */
+
+.footer {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.footer_title {
+    margin-bottom: 20px;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 34px;
+    color: #000;
+    font-weight: 700;
+}
+
+.footer_description {
+    margin-bottom: 30px;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* Button */
+
+.btn {
+    margin-bottom: 100px;
+
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    padding: 10px 38px;
+
+    background-color: #000;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Griloy', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+
+    transition: transform .2s linear;
+}
+
+.btn:active {
+    transform: scale(95%);
+}
+
+.social-icons {
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_item {
+    margin-right: 60px;
+}
+
+.social-icons .social_item:last-child {
+margin-right: 0;
+}
+
+
+.social-text {
+    font-family: 'Griloy', sans-serif;
+    font-size: 14px;
+    color: #828282;
+    font-weight: 500;
+}
